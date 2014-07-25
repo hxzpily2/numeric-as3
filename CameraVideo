@@ -1,0 +1,16 @@
+package {
+    import flash.display.BitmapData;
+    import flash.display.Sprite;
+
+    public class CameraVideo extends Sprite{
+
+        public var bitmapData:BitmapData;
+
+        public function CameraVideo() {
+        }
+
+        public function play():void {
+
+        }
+    }
+}
