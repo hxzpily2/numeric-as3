@@ -1,4 +1,4 @@
-package iad {
+package {
 
     public class Numeric {
 
@@ -183,8 +183,8 @@ package iad {
             return A;
         }
 
-        private static function dotVV(x:Array,y:Array):Array {
-            var i:int,n:int=x.length,i1:int,ret:Array = x[n-1]*y[n-1];
+        private static function dotVV(x:Array,y:Array):Number {
+            var i:int,n:int=x.length,i1:int,ret:Number = x[n-1]*y[n-1];
             for(i=n-2;i>=1;i-=2) {
                 i1 = i-1;
                 ret += x[i]*y[i] + x[i1]*y[i1];
@@ -194,9 +194,9 @@ package iad {
         }
 
 
-        public static function inv(x:Array):Array {
-            var s:Array = dim(x), abs:Function = Math.abs, m:int = s[0], n:int = s[1];
-            var A:Array = clone(x), Ai:Array, Aj:Array;
+        public static function inv(x1:Array):Array {
+            var s:Array = dim(x1), abs:Function = Math.abs, m:int = s[0], n:int = s[1];
+            var A:Array = clone(x1), Ai:Array, Aj:Array;
             var I:Array = identity(m), Ii:Array, Ij:Array;
             var i:int,j:int,k:int,x:int;
             for(j=0;j<n;++j) {
